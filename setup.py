@@ -11,6 +11,9 @@ setuptools.setup(
     license='MIT License',
     install_requires=['requests'],
 
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+
     url="https://github.com/cryptounifier/python-sdk",
     project_urls={
         "Bug Tracker": "https://github.com/cryptounifier/python-sdk/issues",
