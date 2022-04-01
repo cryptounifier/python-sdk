@@ -9,7 +9,6 @@ setuptools.setup(
     description='CryptoUnifier API Python Integration.',
     author='https://cryptounifier.io/',
     license='MIT License',
-    packages=['cryptounifier'],
     install_requires=['requests'],
 
     url="https://github.com/cryptounifier/python-sdk",
