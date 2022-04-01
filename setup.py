@@ -7,7 +7,6 @@ setuptools.setup(
     name='cryptounifier',
     version='1.0.1',
     description='CryptoUnifier API Python Integration.',
-    url='https://cryptounifier.io/',
     author='https://cryptounifier.io/',
     license='MIT License',
     packages=['cryptounifier'],
