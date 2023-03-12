@@ -19,7 +19,7 @@ You can use the `WalletAPI` class for convenient access to API methods. Some are
 ```py
 from cryptounifier import MerchantAPI
 
-client = new WalletAPI("WALLET_KEY", "SECRET_KEY", "btc")
+client = WalletAPI("WALLET_KEY", "SECRET_KEY", "btc")
 
 balance = client.getBalance()
 print(balance)
@@ -35,7 +35,7 @@ You can use the `MerchantAPI` class for convenient access to API methods. Some a
 ```py
 from cryptounifier import MerchantAPI
 
-client = new MerchantAPI("MERCHANT_KEY", "SECRET_KEY")
+client = MerchantAPI("MERCHANT_KEY", "SECRET_KEY")
 
 invoice = client.createInvoice(["btc", "bch", "eth"])
 print(invoice)
