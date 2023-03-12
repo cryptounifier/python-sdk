@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='cryptounifier',
-    version='1.0.2',
+    version='1.0.3',
     description='CryptoUnifier API Python Integration.',
     author='https://cryptounifier.io/',
     license='MIT License',
