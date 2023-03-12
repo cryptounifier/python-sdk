@@ -26,7 +26,8 @@ class BaseApi(object):
     def executeRequest(self, method, uri, body={}):
         if body != None:
             body = self.prepareRequest(body)
+
         if method == 'POST':
-            return requests.post(self.baseUrl+'/'+uri, headers=self.headers, data=json.dumps(body)).content
+            return requests.post(self.baseUrl+'/'+uri, headers=self.headers, json=body).content
         else:
             return requests.get(self.baseUrl+'/'+uri, headers=self.headers).content
