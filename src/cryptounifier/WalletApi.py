@@ -22,9 +22,10 @@ class WalletApi(BaseApi):
     def getDepositAddresses(self):
         return self.executeRequest('GET', 'deposit-addresses')
 
-    def validateAddresses(self, addresses):
+    def validateAddresses(self, addresses, validateActivation = None):
         return self.executeRequest('POST', 'validate-addresses',{
-            'addresses' : json.dumps(addresses)
+            'addresses' : json.dumps(addresses),
+            'validate_activation' : validateActivation
         })
     
     def estimateFee(self, destinations, feePerByte = None, extraField = None):
